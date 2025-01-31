@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        h1 {
+            padding: 30px 0;
+            text-align: center;
+        }
+        .picture_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .res_picture {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+        .video_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 30px 0;
+        }
+        video {
+            width: 600px;
+        }
+        audio {
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello, I'm Kehinde Adekunle – an architect & front-end engineer!</h1>
+    </header>
+
+    <!-- Picture Element -->
+    <div class="picture_container">
+        <picture class="res_picture">
+            <source srcset="/Assignment2b/assets/james.png" media="(max-width: 480px)">
+            <source srcset="/Assignment2b/assets/james.png" media="(max-width: 1024px)">
+            <source srcset="/Assignment2b/assets/james.jpg" media="(min-width: 1025px)">
+            <img src="assets/james.jpg" alt="Architect & Front-end Developer">
+        </picture>
+        <p>Shaping the world with architecture and code.</p>
+    </div>
+
+    <!-- Video Element -->
+    <div class="video_container">
+        <video controls autoplay loop preload="auto">
+            <source src="/Assignment2b/assets/architect.mp4" type="video/mp4">
+            <source src="/Assignment2b/assets/architect.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <p>A short video about my journey from architecture to tech generated with AI.</p>
+    </div>
+
+    <!-- Audio Element -->
+    <div>
+        <audio src="assets/amalgam-217007.mp3" controls autoplay></audio>
+    </div>
+</body>
+</html>
