@@ -14,24 +14,21 @@
             align-items: center;
             flex-direction: column;
             min-height: 100vh;
-            text-align: center;
+            margin: 0;
         }
         .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
             padding: 0 30px;
         }
         header {
             padding: 30px 0;
             width: 100%;
             text-align: center;
-        }
-        .picture_container,
-        .video_container,
-        .audio_container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
         }
         .res_picture {
             width: 100%;
@@ -51,7 +48,7 @@
             <h1>Hello, I'm Kehinde Adekunle – an architect & front-end engineer!</h1>
         </header>
         <!-- Picture Element -->
-        <div class="picture_container">
+        <div>
             <picture class="res_picture">
                 <source srcset="assets/james_.png" media="(max-width: 480px)">
                 <source srcset="assets/james.png" media="(max-width: 1024px)">
@@ -62,7 +59,7 @@
         </div>
 
         <!-- Video Element -->
-        <div class="video_container">
+        <div>
             <video controls autoplay loop preload="auto">
                 <source src="assets/architect.mp4" type="video/mp4">
                 <source src="assets/architect.webm" type="video/webm">
@@ -73,7 +70,7 @@
 
         <!-- Audio Element -->
         <div>
-            <audio class="audio_container" src="assets/amalgam-217007.mp3" controls autoplay></audio>
+            <audio src="assets/amalgam-217007.mp3" controls autoplay></audio>
         </div>
     </div>
     
