@@ -10,11 +10,19 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            text-align: center;
+            padding: 20px;
         }
         caption {
             margin-bottom: 20px;
+        }
+        .table_container {
+            width: 100%;
+            overflow-x: auto;
+            display: grid;
+            place-items: center;
         }
         table {
             background-color: rgb(228, 228, 228);
@@ -35,37 +43,39 @@
 </head>
 <body>
     <h1>AltSchool Africa- Schools and Courses</h1>
-    <table>
-        <caption>Table showing the differents Schools at AltSchool Africa and the various courses in each school</caption>
-        <thead>
-            <tr>
-                <th>School</th>
-                <th colspan="4">Courses</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">School of Engineering</th>
-                <td>Frontend Engineering</td>
-                <td>Backend Engineering</td>
-                <td>Cloud Engineering</td>
-                <td>Cybersecurity</td>
-            </tr>
-            <tr>
-                <th scope="row">School of Product</th>
-                <td>Product Design</td>
-                <td>Marketing</td>
-                <td>Management</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <th scope="row">School of Data</th>
-                <td>Data Analysis</td>
-                <td>Data Science</td>
-                <td>Data Engineering</td>
-                <td>&nbsp;</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table_container">
+        <table>
+            <caption>Table showing the differents Schools at AltSchool Africa and the various courses in each school</caption>
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th colspan="4">Courses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">School of Engineering</th>
+                    <td>Frontend Engineering</td>
+                    <td>Backend Engineering</td>
+                    <td>Cloud Engineering</td>
+                    <td>Cybersecurity</td>
+                </tr>
+                <tr>
+                    <th scope="row">School of Product</th>
+                    <td>Product Design</td>
+                    <td>Marketing</td>
+                    <td>Management</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th scope="row">School of Data</th>
+                    <td>Data Analysis</td>
+                    <td>Data Science</td>
+                    <td>Data Engineering</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
